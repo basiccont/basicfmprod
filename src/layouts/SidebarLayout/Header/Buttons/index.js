@@ -1,6 +1,7 @@
 import { Box , Tooltip, IconButton } from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import HeaderNotifications from './Notifications';
 import { TWITTER , MEDIUM , INSTA } from 'config/configct';
 
@@ -8,9 +9,9 @@ function HeaderButtons() {
   return (
     <Box sx={{ mr: 1 }}>
       {/* <HeaderSearch /> */}
-      <Tooltip arrow placement="top" title="Instagram">
-                    <IconButton color="primary" onClick={event =>  window.open(INSTA)}>
-                      <InstagramIcon />
+      <Tooltip arrow placement="top" title="Medium">
+                    <IconButton color="primary" onClick={event =>  window.open(MEDIUM)}>
+                      <AutoStoriesIcon />
                     </IconButton>
                   </Tooltip>
 
