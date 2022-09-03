@@ -531,8 +531,8 @@ const callAdmin = async (sponaddress) => {
       }
       else {
 
-        // let isNewUser = await instance.methods.checkUser(sponaddress.trim()).call();
-        // if (!isNewUser) { setLoadings(false); return; }
+         let isNewUser = await instance.methods.checkUser(sponaddress.trim()).call();
+        if (!isNewUser) { setWarnmsgg("Sponsor Not Found! Please use sponsor finder tool"); setLoadings(false); return; }
     
 
         await instance.methods.getDashBoard(sponaddress.trim()).call(
