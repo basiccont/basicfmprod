@@ -117,11 +117,11 @@ function DashboardTasks() {
   const [isConnected, setIsConnected] = useState(false);
   const [errormsg, setErrormsg] = useState(null);
   const [isLoadingConn, setIsLoadingConn] = useState(false);
-  const [currentTab, setCurrentTab] = useState('analytics');
+  const [currentTab, setCurrentTab] = useState('taskSearch');
 
   const tabs = [
-    { value: 'analytics', label: 'Overview' },
     { value: 'taskSearch', label: 'FastX Matic' },
+    { value: 'analytics', label: 'Overview' },
   ];
 
    /* chain switch */
@@ -277,6 +277,21 @@ function DashboardTasks() {
             alignItems="stretch"
             spacing={0}
           >
+           {currentTab === 'taskSearch' && (
+              <Grid item xs={12}>
+                <Box p={4}>
+                  <TaskSearch 
+                   isConnected={isConnected}
+                   accounts={accounts}
+                   web3={web3}
+                   errormsgw={errormsg}
+                   onConnect={onConnect}
+                   onDisconnect={onDisconnect}
+                   refid = {refid}
+                  />
+                </Box>
+              </Grid>
+            )}
             {currentTab === 'analytics' && (
               <>
                 <Grid item xs={12}>
@@ -331,21 +346,7 @@ function DashboardTasks() {
                 </Grid>
               </>
             )}
-            {currentTab === 'taskSearch' && (
-              <Grid item xs={12}>
-                <Box p={4}>
-                  <TaskSearch 
-                   isConnected={isConnected}
-                   accounts={accounts}
-                   web3={web3}
-                   errormsgw={errormsg}
-                   onConnect={onConnect}
-                   onDisconnect={onDisconnect}
-                   refid = {refid}
-                  />
-                </Box>
-              </Grid>
-            )}
+
 
           </Grid>
         </Card>
