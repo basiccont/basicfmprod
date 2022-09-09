@@ -63,7 +63,7 @@ function PageHeader(props) {
           
 
           <Typography variant="subtitle2">
-            Manage your crypto and grow it with the FastX decentralized distribution smart contract on the polygon blockchain.
+            Manage your crypto and grow it with the Matic Coin distribution smart contract works on 25 upline, 20 downline income.
           </Typography>
         </Box>
       </Box>
