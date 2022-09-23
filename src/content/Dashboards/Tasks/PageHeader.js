@@ -63,7 +63,7 @@ function PageHeader(props) {
           
 
           <Typography variant="subtitle2">
-            Manage your crypto and grow it with the Matic Coin distribution smart contract works on 25 upline, 20 downline income.
+            Manage your crypto and grow it with the MATIC Income Bot provides 70 Up 20 Down Line Income Opportunity.
           </Typography>
         </Box>
       </Box>
