@@ -69,18 +69,18 @@ const RecentOrdersTable = ({ cryptoOrders }) => {
             Free Flow Plans - Min 10 Matic , Max 500 Matic on each buy
           </Box>
         }
-        title="Token Value Pack Details"
+        title="BOT Value Pack Details"
       />
       <Divider />
       <TableContainer>
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Token holdings</TableCell>
+              <TableCell>BOT holdings</TableCell>
               <TableCell>70% to 25 Upline</TableCell>
               <TableCell>20% to 20 Downline</TableCell>
               <TableCell align="right">10% Sponsor Bonus</TableCell>
-              <TableCell align="right">Token holding rating</TableCell>
+              <TableCell align="right">BOT holding rating</TableCell>
               {/* <TableCell align="right">Actions</TableCell> */}
             </TableRow>
           </TableHead>
@@ -156,7 +156,7 @@ const RecentOrdersTable = ({ cryptoOrders }) => {
         Note : 
         <ul>
           <li>User's complete amount placed into FASTX distribution smart contract.</li>
-          <li>High Token Holding Value gets big part of the share ratio.</li>
+          <li>High BOT Holding Value gets big part of the share ratio.</li>
           <li>No withdraw and contract fee.</li>
         </ul>
     

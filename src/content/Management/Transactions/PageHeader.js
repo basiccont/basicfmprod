@@ -11,10 +11,10 @@ function PageHeader() {
     <Grid container justifyContent="space-between" alignItems="center">
       <Grid item>
         <Typography variant="h3" component="h3" gutterBottom>
-          Token Value Pack Walk-through
+          BOT Value Pack Walk-through
         </Typography>
         <Typography variant="subtitle2">
-          FastX decentralized distribution based on the Token holding value.
+          FastX decentralized distribution based on the BOT holding value.
         </Typography>
       </Grid>
       <Grid item>

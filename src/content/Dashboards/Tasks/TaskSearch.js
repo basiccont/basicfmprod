@@ -152,7 +152,7 @@ function TaskSearch(props) {
   const [copyTokens, setCopyTokens] = useState('Copy Token');
   const [copyRef, setCopyRef] = useState('Copy Ref Link');
   const [copyShRef, setCopyShRef] = useState('Copy and Share Ref Link');
-  const [tokenamt, setTokenamt] = useState(10);
+  const [tokenamt, setTokenamt] = useState(1);
   
   const [totalUsers, setTotalUsers] = useState(0);
   const [totalWithdraws, setTotalWithdraws] = useState(null);
@@ -174,7 +174,7 @@ function TaskSearch(props) {
       <b> Check Sponsor Health</b>
     </Typography>,
         <Typography key="5" color="primary">
-        <b> Buy Token</b>
+        <b> Send BOT</b>
       </Typography>,
           <Typography key="6" color="primary">
            <b> Refresh Board</b>
@@ -221,7 +221,7 @@ function TaskSearch(props) {
     
     const isaddress = AddressChk(ads);
  
-    if (!(amt >= 10 && amt <= 500)) {
+    if (!(amt >= 1 && amt <= 500)) {
       errflag =1;
       setErrormsgg("Each Buy,Min Amount: 10 & Max Amount: 500");
     }
@@ -302,7 +302,7 @@ const getUserDetails = async () => {
             }else {
              setPkgvalue(res[0]);
              let val = res[0];
-              if (val >=10 && val <=50) { setRate(1); }
+              if (val >=1 && val <=50) { setRate(1); }
               else if (val >=51 && val <=100) { setRate(2); }
               else if (val >=101 && val <=200) { setRate(3); }
               else if (val >=201 && val <=400) { setRate(4); }
@@ -548,7 +548,7 @@ const callAdmin = async (sponaddress) => {
               }
 
               if(res[2] >=20){
-                setWarnmsgg("Already 20 Downline token holders exists! It is recommended for influencers only to choose this sponsor");
+                setWarnmsgg("Already 20 Downline users exists! It is recommended for influencers only to choose this sponsor");
               }
 
               if(res[2] > 0){
@@ -581,7 +581,7 @@ const callAdmin = async (sponaddress) => {
       >
         <Box>
           <Typography variant="subtitle2">
-            User Dashboard
+            BOT Dashboard
             <Text color="black">
               {/* <b>Panel</b> */}
             </Text>
@@ -718,7 +718,7 @@ const callAdmin = async (sponaddress) => {
                           color="primary"
                           onClick={(e) => { setSponaddress(FXSPONSOR); addressRef.current.focus(); callAdmin(FXSPONSOR); } }
                         /> 
-                       and check health.Then proceed to buy token.
+                       and check health.Then proceed to Send BOT.
                   
                    </Typography>
 
@@ -758,7 +758,7 @@ const callAdmin = async (sponaddress) => {
                 {isConnected && loadingr && (  <CircularProgress color="primary" size={20} />   )}
               </Box>
               <Typography variant="h5" noWrap>
-                Token Holding Value
+                BOT Holding Value
               </Typography>
               <Typography variant="subtitle1" noWrap>
                 Matic
@@ -825,7 +825,7 @@ const callAdmin = async (sponaddress) => {
                 Downline
               </Typography>
               <Typography variant="subtitle1" noWrap>
-                token holders {subordinates}
+                partners {subordinates}
               </Typography>
               <Box
                 sx={{
@@ -977,7 +977,7 @@ const callAdmin = async (sponaddress) => {
                 Total Line Income
               </Typography>
               <Typography variant="subtitle1" noWrap>
-                Auto Buy Token 20%
+                Auto Send BOT 20%
               </Typography>
               <Box
                 sx={{
@@ -991,7 +991,7 @@ const callAdmin = async (sponaddress) => {
                   Receive  {((80 / 100) * balance).toFixed(2)}
                 </Typography>
                 <Typography variant="subtitle2" noWrap>
-                  Buy Token  {((20 / 100) * balance).toFixed(2)}
+                  Send BOT  {((20 / 100) * balance).toFixed(2)}
                 </Typography>
 
                 <Box  
@@ -1003,7 +1003,7 @@ const callAdmin = async (sponaddress) => {
               </Box>
 
               {isConnected && (
-                <Tooltip arrow title="Auto Buy Token 20% on withdraw"><span>
+                <Tooltip arrow title="Auto Send BOT 20% on withdraw"><span>
                 <Button variant="outlined" size="small" color="primary" onClick={callwithdraw} 
                 disabled={loadingd}
                 >Withdraw</Button> </span></Tooltip> 
@@ -1091,7 +1091,7 @@ const callAdmin = async (sponaddress) => {
               color="text.secondary"
               size="small" 
             >
-              Receive {tokenamt} FASTX Tokens.
+              Please check sponsor finder tool above
               <Chip
                 sx={{
                   mr: 0.5
@@ -1124,7 +1124,7 @@ const callAdmin = async (sponaddress) => {
                 <Tooltip arrow title="Choose Sponsor with 0 - 20 downline"><span>
                 <Button variant="outlined" size="small" color="primary" onClick={sendValue} 
                 disabled={loading}
-                >Buy Token</Button> </span></Tooltip> 
+                >Send BOT</Button> </span></Tooltip> 
               )}
 
               {isConnected && loading && ( 
@@ -1133,7 +1133,7 @@ const callAdmin = async (sponaddress) => {
 
               {!isConnected && (
                 <Tooltip arrow title="Please Connect Wallet"><span>
-                <Button variant="outlined" size="small" color="primary" onClick={sendValue} disabled>Buy Token</Button> 
+                <Button variant="outlined" size="small" color="primary" onClick={sendValue} disabled>Send BOT</Button> 
                 </span></Tooltip>              )}
                 </Box>
                 
@@ -1223,7 +1223,7 @@ const callAdmin = async (sponaddress) => {
 
 
               <Typography variant="h5" noWrap>
-                Downline Holders
+                Downline Partners
 
               </Typography>
               <Typography variant="subtitle1" noWrap>

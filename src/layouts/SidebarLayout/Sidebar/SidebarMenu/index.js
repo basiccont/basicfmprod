@@ -268,7 +268,7 @@ function SidebarMenu() {
                     onClick={closeSidebar}
                     startIcon={<TableChartTwoToneIcon />}
                   >
-                    Token Value Pack Details
+                    BOT Value Pack Details
                   </Button>
                 </NextLink>
               </ListItem>

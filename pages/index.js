@@ -120,7 +120,7 @@ function DashboardTasks() {
   const [currentTab, setCurrentTab] = useState('taskSearch');
 
   const tabs = [
-    { value: 'taskSearch', label: 'FastX Matic' },
+    { value: 'taskSearch', label: 'Matic BOT' },
     { value: 'analytics', label: 'Overview' },
   ];
 
@@ -246,7 +246,7 @@ function DashboardTasks() {
   return (
     <>
       <Head>
-        <title>FastX Dashboard</title>
+        <title>FastX MATIC BOT</title>
       </Head>
       <PageTitleWrapper>
         <PageHeader 

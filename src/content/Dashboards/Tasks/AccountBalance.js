@@ -139,18 +139,18 @@ function AccountBalance() {
               }}
               variant="h4"
             >
-              Token Value Pack
+              BOT Value Pack
             </Typography>
             <Box>
               <Typography variant="h1" gutterBottom>
-                10 MATIC
+                1 MATIC
               </Typography>
               <Typography
                 variant="h4"
                 fontWeight="normal"
                 color="text.secondary"
               >
-                Distribute 70% to 25 Upline and 20% to 20 Downline token holders
+                Distribute 70% to 25 Upline and 20% to 20 Downline
               </Typography>
               <Box
                 display="flex"
@@ -230,7 +230,7 @@ function AccountBalance() {
                     <ListItemText
                       primary="Upline"
                       primaryTypographyProps={{ variant: 'h5', noWrap: true }}
-                      secondary="Token Holders"
+                      secondary="BOT Users"
                       secondaryTypographyProps={{
                         variant: 'subtitle2',
                         noWrap: true
@@ -251,7 +251,7 @@ function AccountBalance() {
                     <ListItemText
                       primary="Downline"
                       primaryTypographyProps={{ variant: 'h5', noWrap: true }}
-                      secondary="Token Holders"
+                      secondary="BOT Users"
                       secondaryTypographyProps={{
                         variant: 'subtitle2',
                         noWrap: true

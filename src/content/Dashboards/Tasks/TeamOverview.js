@@ -85,7 +85,7 @@ function TeamOverview() {
             variant="determinate"
           />
           <Typography variant="subtitle2" gutterBottom>
-            <Text color="black">80% withdraw ,</Text>20% auto buy tokens.
+            <Text color="black">80% withdraw ,</Text>20% auto Send BOT.
             
           </Typography>
         </Box>
